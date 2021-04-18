@@ -10,7 +10,7 @@ Here is the chart summary of all the common sorting algorithms  essential for in
 | [Selection Sort](Selection-Sort/SelectionSort.md) | Ω(n<sup>2</sup>)   | Θ(n<sup>2</sup>)   | O(n<sup>2</sup>)   | O(1)                   |
 | [Insertion Sort](Insertion-Sort/InsertionSort.md) | Ω(n<sup>2</sup>)   | Θ(n<sup>2</sup>)   | O(n<sup>2</sup>)   | O(1)                   |
 | [Bubble Sort](Bubble-Sort/BubbleSort.md)    | Ω(n)               | Θ(n<sup>2</sup>)   | O(n<sup>2</sup>)   | O(1)                   |
-| [Quicksort](Quicksort/Quicksort.md)      | Ω(nlogn)           | Θ(nlogn)           | O(n^2)             | O(logn)                |
-| [Mergesort](Mergesort/Mergesort.md)      | Ω(nlogn)           | Θ(nlogn)           | O(nlogn)           | O(n)                   |
-| [Timsort](Timsort/Timsort.md)        | Ω(n)               | Θ(nlogn)           | O(nlogn)           | O(n)                   |
+| [Quick Sort](Quick-Sort/QuickSort.md)      | Ω(nlogn)           | Θ(nlogn)           | O(n^2)             | O(logn)                |
+| [Merge Sort](Merge-Sort/MergeSort.md)      | Ω(nlogn)           | Θ(nlogn)           | O(nlogn)           | O(n)                   |
+| [Tim Sort](Tim-Sort/TimSort.md)        | Ω(n)               | Θ(nlogn)           | O(nlogn)           | O(n)                   |
 | [Radix Sort](Radix-Sort/RadixSort.md)     | Ω(nk)              | Θ(nk)              | O(nk)              | O(n+k)                 |
