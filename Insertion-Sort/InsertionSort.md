@@ -25,6 +25,7 @@ To generalize, Insertion Sort is on average twice as fast than Bubble Sort.
 Bubble Sort is bubbling up the maximum value of the unsorted left part to the sorted right part. Insertion Sort is inserting a value in the unsorted right part into the sorted left part. On average, inserting a value will land in the middle of the sorted left part, where as on averge bubbling up the maximum value will always iterate through the entire unsorted left part.
 
 Additional Resource: [Link](https://stackoverflow.com/questions/17270628/insertion-sort-vs-bubble-sort-algorithms)
+___
 
 ## Reference:
 [Link](https://www.youtube.com/watch?v=i-SKeOcBwko&t=560s)
