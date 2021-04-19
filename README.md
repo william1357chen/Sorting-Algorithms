@@ -1,7 +1,7 @@
 # Sorting Algorithms 
 Here is my study guide for sorting algorithms. The importance of sorting algorithms in Computer Science is elaborated well by this [**mycodeschool video**](https://www.youtube.com/watch?v=pkkFqlG0Hds&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=1).  
 
-For each algorithm, we will study the stategy, the time and space complexity, and the implementation in Python and C++.
+For each algorithm, we will study the stategy, the time and space complexity, and the implementation in Python and C++. Note that these algorithms are all sorting an input array of integers.
 
 Here is the chart summary of all the common sorting algorithms  essential for interview prep.
 
@@ -14,3 +14,7 @@ Here is the chart summary of all the common sorting algorithms  essential for in
 | [Merge Sort](Merge-Sort/MergeSort.md)      | Ω(nlogn)           | Θ(nlogn)           | O(nlogn)           | O(n)                   |
 | [Tim Sort](Tim-Sort/TimSort.md)        | Ω(n)               | Θ(nlogn)           | O(nlogn)           | O(n)                   |
 | [Radix Sort](Radix-Sort/RadixSort.md)     | Ω(nk)              | Θ(nk)              | O(nk)              | O(n+k)                 |
+
+
+### Reference: 
+* [Big O CheatSheet](https://www.bigocheatsheet.com/)
