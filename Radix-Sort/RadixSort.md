@@ -4,33 +4,37 @@ Radix Sort is one special algorithm. There is one major differnce between radix 
 ## Implementation
 To understand Radix Sort, we have to first talk about **Counting Sort**
 
-## Counting Sort
+### Counting Sort
+Check here for [Counting Sort](Counting-Sort/CountingSort.md)
 
+The idea of Radix Sort is to perform **Counting Sort** on each digit of the elements in the array. For instance, integers of range 0~999 have maximum 3 digits in base 10 so we will perform **Counting Sort** 3 times with 10 buckets. Another example will be English words no more than 5 characters, we will perform **Counting Sort** 5 times with 26 buckets. 
 
-The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort takes advantage of the fact that integers have a finite number of digits. 
-1. We will first find the number of digits in the biggest number of the array. If there are K digits in the biggest number then we will need to perfom K number of passes. 
-2. Create 10 buckets labeled 0 - 9
-3. For each pass, put all elements of the array in the respected bucket by checking the value of their currently compared digit. 
-4. Now when we put the elements back into the array starting from bucket 0, the elements will be sorted by their current digit. 
-5. Repeat for K passes and now the array is sorted. 
+We have to define some variables for us to clearly understand Radix Sort:
+
+* n = number of elements in array
+* d = number of digits of max element
+* b = base/radix of numbers, or the range of elements in the array. For integers we use base 10 and for alphabets we use base 26. 
+
+If you understand everything until now, we can sum Radix Sort in one sentence:
+```
+Radix Sort is performing d passes of counting sort for each digit with buckets of size b.
+```
+### Important Note
+We have to make sure that Counting Sort is **stable** for Radix Sort to work!
 ___
 
 ## Time Complexity
-`n` is the number of elements in the array and `k` is the number of digits the maximum element has, which requires K passes through the entire array. 
 
-To be more specific, let's say
+Remember:
 * n = number of elements in array
 * d = number of digits of max element
 * b = base/radix of numbers. Here we use base 10.
-### Best Case Ω(kn)
-<br/>
-
-### Average Case Θ(kn)
-<br/>
-
-### Worst Case O(kn)
-<br/>
+### Best, Average, Worst Case O(d(n+b))
+The time complexity of Counting Sort is O(n+k), which `k` being the range of elements in the array, which is the same as `b` is radix sort. We perform counting sort `d` times, so time complexity is O(d(n+b)). We summarize the time complexity to O(kn) for simplicity, for the case where the base/radix is small like base 10 `b = 10`. In O(kn), `k = d`
 
 ___
-## Space Complexity O(n+k)
-Note that although `n` is the same for space complexity, being the number of elements in the array, `k` is actually the *radix* of what we are sorting. For example, if we use base 10 decimals, the *radix* is 10 so `k` is 10. For alphabets, the *radix* is 26 so `k` is 26. The space complexity comes from the `k=10` buckets from 0 - 9, storing `n` elements for each pass. Therefore, space complexity is O(n+k). Again, `k` is the number of buckets, and `n` is the number of elements stored in the bucket for each pass.
+## Space Complexity O(n+b)
+The space complexity for **Counting Sort** is O(n+k), which `k = b` being the base/radix. Here we simplified it to use `k`, but this is kind of misleading. Note that although `n` is the same for time and space complexity, being the number of elements in the array, `k = d` in time complexity and `k = b` in space complexity. To summarize:
+
+* O(kn) time complexity `k = d`
+* O(n+k) space complexity `k = b`

@@ -2,7 +2,8 @@
 This is the implementation of Quick Sort on an array of integers.
 The function sorts an input list of integers by mutating it.
 """
-import random 
+import random
+
 
 def quick_sort(array, low, high):
     if low >= high:
@@ -18,6 +19,7 @@ def random_partition(array, low, high):
     array[high], array[p_index] = array[p_index], array[high]
     return right_pivot_partition(array, low, high)
 
+
 # choose the element at the low position as the pivot
 def left_pivot_partition(array, low, high):
     pivot = array[low]
@@ -25,9 +27,10 @@ def left_pivot_partition(array, low, high):
     for i in range(high, low, -1):
         if array[i] > pivot:
             array[i], array[p_index] = array[p_index] = array[i]
-            p_index -= 1 
+            p_index -= 1
     array[high], array[p_index] = array[p_index] = array[high]
     return p_index
+
 
 # choose the element at the high position as the pivot
 def right_pivot_partition(array, low, high):
@@ -36,6 +39,6 @@ def right_pivot_partition(array, low, high):
     for i in range(low, high):
         if array[i] <= pivot:
             array[i], array[p_index] = array[p_index], array[i]
-            p_index += 1 
+            p_index += 1
     array[high], array[p_index] = array[p_index], array[high]
     return p_index

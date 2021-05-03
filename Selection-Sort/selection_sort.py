@@ -3,6 +3,7 @@ This is the implementation of Selection Sort on an array of integers.
 The function sorts an input list of integers by mutating it.
 """
 
+
 def selection_sort(array: list) -> None:
     n = len(array)
     # Loop til second last num since last num will be the max after second last comparison
@@ -14,4 +15,3 @@ def selection_sort(array: list) -> None:
                 min_index = j
         # Swap current iterating value with min of the remaining list
         array[i], array[min_index] = array[min_index], array[i]
-
