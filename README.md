@@ -15,6 +15,13 @@ Here is the chart summary of all the common sorting algorithms  essential for in
 | [Tim Sort](Tim-Sort/TimSort.md)        | Ω(n)               | Θ(nlogn)           | O(nlogn)           | O(n)                   |
 | [Radix Sort](Radix-Sort/RadixSort.md)     | Ω(nk)              | Θ(nk)              | O(nk)              | O(n+k)                 |
 
+# Sorting Metrics
+## Stability
+
+## Recursive vs. Non Recursive
+
+## In-place and not In-place
+
 
 ### Reference: 
 * [Big O CheatSheet](https://www.bigocheatsheet.com/)
