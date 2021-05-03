@@ -59,3 +59,6 @@ For stability concerns, this technique of counting sort is **unstable**, meaning
 In the example above, indices 0 and 3 are both 1s but for a **stable** sorting technique, the 1 on index 1 must be before the 1 on index 3 after sorting. 
 
 For other sorting algorithms to utlize counting sort like *Radix Sort*, it is important for countint sort to be a stable sorting algorithm. 
+
+___
+Reference: [Link](https://www.youtube.com/watch?v=OKd534EWcdk)

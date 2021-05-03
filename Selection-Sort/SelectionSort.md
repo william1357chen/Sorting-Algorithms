@@ -9,3 +9,5 @@ For any input, the selection sort algorithm will perform the same operations, so
 ## Worst Case Space Complexity O(1)
 The sorting algorithm is done in-place
 
+___
+Reference: [Link](https://www.youtube.com/watch?v=GUDLRan2DWM&list=PL2_aWCzGMAwKedT2KfDMB9YA5DgASZb3U&index=2)

@@ -17,5 +17,4 @@ ___
 The sorting algorithm is done in-place
 
 ___
-## Reference:
-[Link](https://www.youtube.com/watch?v=Jdtq5uKz-w4)
+Reference: [Link](https://www.youtube.com/watch?v=Jdtq5uKz-w4)

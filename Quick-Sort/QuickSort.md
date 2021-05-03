@@ -55,3 +55,6 @@ Scenario: When every pivot picked creates an unbalanced partitioning, The recurs
 ---
 ## Why is QuickSort More Practical than MergeSort?
 Quicksort does its sorting in-place, which means it does not require additional memory on the heap for copying the array like mergesort, so quicksort just needs the O(logn) memory on the call stack. Even though quicksort has a worst case time complexity of O(n<sup>2</sup>), it can be avoided by randomizing the pivot picked to ensure average case of O(nlogn) time complexity.
+
+___
+Reference: [Link](https://www.youtube.com/watch?v=COk73cpQbFQ)

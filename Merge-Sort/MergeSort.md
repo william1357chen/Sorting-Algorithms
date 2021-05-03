@@ -23,3 +23,6 @@ ___
 We know the recursion depth for merge sort is O(logn), and we know that merge has to make copies of left subarray and right subarray. Since, the left subarray will be recursed first, the right subarray's branches will not be called before left subarray, there will be O(logn) calls, which means there will be (n + n/2 + n/4 +...+ 1) = 2n - 1 memory for copying the array. Therefore, we have O(n) additional space required on the heap. Additionally, there are O(logn) resursive calls on the stack. O(n) outweighs O(logn) so merge sort requires O(n) space.
 
 ### Worst Space Complexity O(n)
+
+___
+Reference: [Link](https://www.youtube.com/watch?v=TzeBrDU-JaY)
