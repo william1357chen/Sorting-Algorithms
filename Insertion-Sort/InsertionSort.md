@@ -27,5 +27,4 @@ Bubble Sort is bubbling up the maximum value of the unsorted left part to the so
 Additional Resource: [Link](https://stackoverflow.com/questions/17270628/insertion-sort-vs-bubble-sort-algorithms)
 ___
 
-Reference:[Link](https://www.youtube.com/watch?v=i-SKeOcBwko&t=560s)
-#
+Reference: [Link](https://www.youtube.com/watch?v=i-SKeOcBwko&t=560s)
